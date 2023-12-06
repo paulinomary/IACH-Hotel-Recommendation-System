@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e9035abf10d76ac09c2fbdf1a6d033c1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e9035abf10d76ac09c2fbdf1a6d033c1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e9035abf10d76ac09c2fbdf1a6d033c1 = L.map(
+                "map_e9035abf10d76ac09c2fbdf1a6d033c1",
+                {
+                    center: [48.86374958295455, 2.3348833329545453],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6da292e0f7537f81877adbde46153d92 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e9035abf10d76ac09c2fbdf1a6d033c1);
+        
+    
+            var marker_e089a7bf47e46d8d71f3ba2bdd186939 = L.marker(
+                [48.8637503, 2.3320406],
+                {}
+            ).addTo(map_e9035abf10d76ac09c2fbdf1a6d033c1);
+        
+    
+            var icon_33ca858b914152dd731c760a30af49da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e089a7bf47e46d8d71f3ba2bdd186939.setIcon(icon_33ca858b914152dd731c760a30af49da);
+        
+    
+        var popup_f8f182f843f1d1b5984685677f8d4144 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a0e6a1c8cf0a768fee4d0f52e4fdaa1 = $(`<div id="html_2a0e6a1c8cf0a768fee4d0f52e4fdaa1" style="width: 100.0%; height: 100.0%;">Hotel Regina</div>`)[0];
+                popup_f8f182f843f1d1b5984685677f8d4144.setContent(html_2a0e6a1c8cf0a768fee4d0f52e4fdaa1);
+            
+        
+
+        marker_e089a7bf47e46d8d71f3ba2bdd186939.bindPopup(popup_f8f182f843f1d1b5984685677f8d4144)
+        ;
+
+        
+    
+    
+            var marker_cluster_1e73c95474684839d39c36c3080ef2b7 = L.markerClusterGroup(
+                {}
+            );
+            map_e9035abf10d76ac09c2fbdf1a6d033c1.addLayer(marker_cluster_1e73c95474684839d39c36c3080ef2b7);
+        
+    
+            var marker_3749033c24e31ff01aeb7ceb0e05c293 = L.marker(
+                [48.8758981, 2.3590504],
+                {}
+            ).addTo(marker_cluster_1e73c95474684839d39c36c3080ef2b7);
+        
+    
+            var icon_62c15808e297868501a3ff795ea8e830 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3749033c24e31ff01aeb7ceb0e05c293.setIcon(icon_62c15808e297868501a3ff795ea8e830);
+        
+    
+        var popup_7825f45b3639a1a0a80c3e8cde2f0910 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf99348b91ff7ce1804eeb314035e08f = $(`<div id="html_cf99348b91ff7ce1804eeb314035e08f" style="width: 100.0%; height: 100.0%;">Holiday Inn Paris Gare de l Est</div>`)[0];
+                popup_7825f45b3639a1a0a80c3e8cde2f0910.setContent(html_cf99348b91ff7ce1804eeb314035e08f);
+            
+        
+
+        marker_3749033c24e31ff01aeb7ceb0e05c293.bindPopup(popup_7825f45b3639a1a0a80c3e8cde2f0910)
+        ;
+
+        
+    
+    
+            var marker_b60241101df0bbc4aa461603944dda51 = L.marker(
+                [48.8528427, 2.3422256],
+                {}
+            ).addTo(marker_cluster_1e73c95474684839d39c36c3080ef2b7);
+        
+    
+            var icon_2efe276f3d9cec6face461d3dc0064bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b60241101df0bbc4aa461603944dda51.setIcon(icon_2efe276f3d9cec6face461d3dc0064bb);
+        
+    
+        var popup_ff0f36189aa6b8f2adeb086018ae5a6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb5f37d81ac35393136d0d806a31203d = $(`<div id="html_cb5f37d81ac35393136d0d806a31203d" style="width: 100.0%; height: 100.0%;">Holiday Inn Paris Notre Dame</div>`)[0];
+                popup_ff0f36189aa6b8f2adeb086018ae5a6c.setContent(html_cb5f37d81ac35393136d0d806a31203d);
+            
+        
+
+        marker_b60241101df0bbc4aa461603944dda51.bindPopup(popup_ff0f36189aa6b8f2adeb086018ae5a6c)
+        ;
+
+        
+    
+    
+            var marker_133163f098517764369b29e13c9b5060 = L.marker(
+                [48.8649306, 2.3290844],
+                {}
+            ).addTo(marker_cluster_1e73c95474684839d39c36c3080ef2b7);
+        
+    
+            var icon_efff44f72a2344efaf440f83ea345ae7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_133163f098517764369b29e13c9b5060.setIcon(icon_efff44f72a2344efaf440f83ea345ae7);
+        
+    
+        var popup_05d2e9f37cc4197bb9bc4a8ed4d55ceb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d0be3183a78ae8025ef490286939a0a = $(`<div id="html_9d0be3183a78ae8025ef490286939a0a" style="width: 100.0%; height: 100.0%;">Hotel Brighton Esprit de France</div>`)[0];
+                popup_05d2e9f37cc4197bb9bc4a8ed4d55ceb.setContent(html_9d0be3183a78ae8025ef490286939a0a);
+            
+        
+
+        marker_133163f098517764369b29e13c9b5060.bindPopup(popup_05d2e9f37cc4197bb9bc4a8ed4d55ceb)
+        ;
+
+        
+    
+    
+            var marker_fa6f8e7666112b30a0dd095d5b1e16b0 = L.marker(
+                [48.8642689, 2.3308179],
+                {}
+            ).addTo(marker_cluster_1e73c95474684839d39c36c3080ef2b7);
+        
+    
+            var icon_a7454e3c78638780756a16da4db5675b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fa6f8e7666112b30a0dd095d5b1e16b0.setIcon(icon_a7454e3c78638780756a16da4db5675b);
+        
+    
+        var popup_9ac91308d4ca2c41098bbb0ff8ecaf14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58b9f5ca2031a90682e1a90ccc2ac4b8 = $(`<div id="html_58b9f5ca2031a90682e1a90ccc2ac4b8" style="width: 100.0%; height: 100.0%;">Saint James Albany Paris Hotel Spa</div>`)[0];
+                popup_9ac91308d4ca2c41098bbb0ff8ecaf14.setContent(html_58b9f5ca2031a90682e1a90ccc2ac4b8);
+            
+        
+
+        marker_fa6f8e7666112b30a0dd095d5b1e16b0.bindPopup(popup_9ac91308d4ca2c41098bbb0ff8ecaf14)
+        ;
+
+        
+    
+    
+            var marker_cluster_a97c5524389c50402d765de7b95aaad9 = L.markerClusterGroup(
+                {}
+            );
+            map_e9035abf10d76ac09c2fbdf1a6d033c1.addLayer(marker_cluster_a97c5524389c50402d765de7b95aaad9);
+        
+    
+            var marker_3911aed635743a8f7fbd81559a64bc14 = L.marker(
+                [48.858844, 2.29435],
+                {}
+            ).addTo(marker_cluster_a97c5524389c50402d765de7b95aaad9);
+        
+    
+            var icon_fef691d02fc071d8f54d56d36be5cf54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3911aed635743a8f7fbd81559a64bc14.setIcon(icon_fef691d02fc071d8f54d56d36be5cf54);
+        
+    
+        var popup_333e7cf11777ec8b00b6daeec7354109 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf5b4f7dee32e5320086151b2cb4ec8b = $(`<div id="html_cf5b4f7dee32e5320086151b2cb4ec8b" style="width: 100.0%; height: 100.0%;">Eiffel Tower</div>`)[0];
+                popup_333e7cf11777ec8b00b6daeec7354109.setContent(html_cf5b4f7dee32e5320086151b2cb4ec8b);
+            
+        
+
+        marker_3911aed635743a8f7fbd81559a64bc14.bindPopup(popup_333e7cf11777ec8b00b6daeec7354109)
+        ;
+
+        
+    
+    
+            var marker_288d205070bb19103d48ecd8508a4736 = L.marker(
+                [48.860611, 2.337643],
+                {}
+            ).addTo(marker_cluster_a97c5524389c50402d765de7b95aaad9);
+        
+    
+            var icon_55c831a46c0a19b85993562239e8533d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_288d205070bb19103d48ecd8508a4736.setIcon(icon_55c831a46c0a19b85993562239e8533d);
+        
+    
+        var popup_b2caf65a55158a94da20ac294c9922bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d208f4122677e63608e35abd7a6e46e = $(`<div id="html_6d208f4122677e63608e35abd7a6e46e" style="width: 100.0%; height: 100.0%;">Louvre Museum</div>`)[0];
+                popup_b2caf65a55158a94da20ac294c9922bf.setContent(html_6d208f4122677e63608e35abd7a6e46e);
+            
+        
+
+        marker_288d205070bb19103d48ecd8508a4736.bindPopup(popup_b2caf65a55158a94da20ac294c9922bf)
+        ;
+
+        
+    
+    
+            var marker_9cf570368d62de75c4ecb4c65d1c456e = L.marker(
+                [48.853, 2.3498],
+                {}
+            ).addTo(marker_cluster_a97c5524389c50402d765de7b95aaad9);
+        
+    
+            var icon_8f144698caafb409b785277f08c4725c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9cf570368d62de75c4ecb4c65d1c456e.setIcon(icon_8f144698caafb409b785277f08c4725c);
+        
+    
+        var popup_cb7063c0c0e6158cd0cb359a55d12db4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e0642d7f0ec1f3fcad183c399997157 = $(`<div id="html_4e0642d7f0ec1f3fcad183c399997157" style="width: 100.0%; height: 100.0%;">Notre-Dame Cathedral</div>`)[0];
+                popup_cb7063c0c0e6158cd0cb359a55d12db4.setContent(html_4e0642d7f0ec1f3fcad183c399997157);
+            
+        
+
+        marker_9cf570368d62de75c4ecb4c65d1c456e.bindPopup(popup_cb7063c0c0e6158cd0cb359a55d12db4)
+        ;
+
+        
+    
+    
+            var marker_966a6a264de6b688cb74918dd89e8ea6 = L.marker(
+                [48.8867, 2.3431],
+                {}
+            ).addTo(marker_cluster_a97c5524389c50402d765de7b95aaad9);
+        
+    
+            var icon_a61ffc40b9b6779b00a246ad5afc89e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_966a6a264de6b688cb74918dd89e8ea6.setIcon(icon_a61ffc40b9b6779b00a246ad5afc89e4);
+        
+    
+        var popup_9f17cc074eb358a12cef9adbe13aac95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cf513235f31908c5646099e9bf8431d = $(`<div id="html_4cf513235f31908c5646099e9bf8431d" style="width: 100.0%; height: 100.0%;">Montmartre</div>`)[0];
+                popup_9f17cc074eb358a12cef9adbe13aac95.setContent(html_4cf513235f31908c5646099e9bf8431d);
+            
+        
+
+        marker_966a6a264de6b688cb74918dd89e8ea6.bindPopup(popup_9f17cc074eb358a12cef9adbe13aac95)
+        ;
+
+        
+    
+    
+            var marker_4c837cc1deaaf77cfaf29464348bce0a = L.marker(
+                [48.8738, 2.295],
+                {}
+            ).addTo(marker_cluster_a97c5524389c50402d765de7b95aaad9);
+        
+    
+            var icon_cd7ad50e4cdd7d046d9567ae9ada95a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4c837cc1deaaf77cfaf29464348bce0a.setIcon(icon_cd7ad50e4cdd7d046d9567ae9ada95a3);
+        
+    
+        var popup_f1ae1a75a8a830774f10ff0e1ce412dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1173c61ccf4f0e877f4bfa4e6d91c34 = $(`<div id="html_a1173c61ccf4f0e877f4bfa4e6d91c34" style="width: 100.0%; height: 100.0%;">Arc de Triomphe</div>`)[0];
+                popup_f1ae1a75a8a830774f10ff0e1ce412dd.setContent(html_a1173c61ccf4f0e877f4bfa4e6d91c34);
+            
+        
+
+        marker_4c837cc1deaaf77cfaf29464348bce0a.bindPopup(popup_f1ae1a75a8a830774f10ff0e1ce412dd)
+        ;
+
+        
+    
+    
+            var marker_7d04255b3668221108d5bc2a7c722ce0 = L.marker(
+                [48.8599, 2.3315],
+                {}
+            ).addTo(marker_cluster_a97c5524389c50402d765de7b95aaad9);
+        
+    
+            var icon_f0b01099158f8cc428fc8a15083a2dd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7d04255b3668221108d5bc2a7c722ce0.setIcon(icon_f0b01099158f8cc428fc8a15083a2dd8);
+        
+    
+        var popup_40c17d83bca7c8d0e7986bb25ad4afd1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be29fbe7b4bff19788b9cb838814999c = $(`<div id="html_be29fbe7b4bff19788b9cb838814999c" style="width: 100.0%; height: 100.0%;">Musée d'Orsay</div>`)[0];
+                popup_40c17d83bca7c8d0e7986bb25ad4afd1.setContent(html_be29fbe7b4bff19788b9cb838814999c);
+            
+        
+
+        marker_7d04255b3668221108d5bc2a7c722ce0.bindPopup(popup_40c17d83bca7c8d0e7986bb25ad4afd1)
+        ;
+
+        
+    
+    
+            var marker_9bff0834f9ddd94b691b25556e63586f = L.marker(
+                [48.8558, 2.3451],
+                {}
+            ).addTo(marker_cluster_a97c5524389c50402d765de7b95aaad9);
+        
+    
+            var icon_e0cfd0d795ac800212f9a592e63685c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9bff0834f9ddd94b691b25556e63586f.setIcon(icon_e0cfd0d795ac800212f9a592e63685c6);
+        
+    
+        var popup_99e812f2c30764f01962d65e1a547616 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd7a94b7cd439b5db105f2e9c74bddca = $(`<div id="html_cd7a94b7cd439b5db105f2e9c74bddca" style="width: 100.0%; height: 100.0%;">Sainte-Chapelle</div>`)[0];
+                popup_99e812f2c30764f01962d65e1a547616.setContent(html_cd7a94b7cd439b5db105f2e9c74bddca);
+            
+        
+
+        marker_9bff0834f9ddd94b691b25556e63586f.bindPopup(popup_99e812f2c30764f01962d65e1a547616)
+        ;
+
+        
+    
+    
+            var marker_a3e6128b075aacaaa320389c2310cb90 = L.marker(
+                [48.8462, 2.3431],
+                {}
+            ).addTo(marker_cluster_a97c5524389c50402d765de7b95aaad9);
+        
+    
+            var icon_dbf0bf45b18a673361d82a6b0bfce802 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a3e6128b075aacaaa320389c2310cb90.setIcon(icon_dbf0bf45b18a673361d82a6b0bfce802);
+        
+    
+        var popup_9d7790a2dc1942c94afdd43adee93c1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e78a6d122765fb72b6139efb2e59b1dc = $(`<div id="html_e78a6d122765fb72b6139efb2e59b1dc" style="width: 100.0%; height: 100.0%;">Panthéon</div>`)[0];
+                popup_9d7790a2dc1942c94afdd43adee93c1a.setContent(html_e78a6d122765fb72b6139efb2e59b1dc);
+            
+        
+
+        marker_a3e6128b075aacaaa320389c2310cb90.bindPopup(popup_9d7790a2dc1942c94afdd43adee93c1a)
+        ;
+
+        
+    
+    
+            var marker_ccb26b459c2a536dcce5fb9d13a1f953 = L.marker(
+                [48.861, 2.358],
+                {}
+            ).addTo(marker_cluster_a97c5524389c50402d765de7b95aaad9);
+        
+    
+            var icon_8a35a7d03fc9fe581f259ee1fd2ab07e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ccb26b459c2a536dcce5fb9d13a1f953.setIcon(icon_8a35a7d03fc9fe581f259ee1fd2ab07e);
+        
+    
+        var popup_022118bf91ade3b158962e4179cff313 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e13d301cf7b52121886ce99739ae417f = $(`<div id="html_e13d301cf7b52121886ce99739ae417f" style="width: 100.0%; height: 100.0%;">Musée Picasso</div>`)[0];
+                popup_022118bf91ade3b158962e4179cff313.setContent(html_e13d301cf7b52121886ce99739ae417f);
+            
+        
+
+        marker_ccb26b459c2a536dcce5fb9d13a1f953.bindPopup(popup_022118bf91ade3b158962e4179cff313)
+        ;
+
+        
+    
+    
+            var marker_34170e8fe758f2d1ea0aa5887fab97c7 = L.marker(
+                [48.8738, 2.2944],
+                {}
+            ).addTo(marker_cluster_a97c5524389c50402d765de7b95aaad9);
+        
+    
+            var icon_4857ba154e8fe671b439650dd08abde9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_34170e8fe758f2d1ea0aa5887fab97c7.setIcon(icon_4857ba154e8fe671b439650dd08abde9);
+        
+    
+        var popup_b75aa7a1e2efbbac978977cb977c9fbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b1933bed02b87e804d0f7c36319ade1 = $(`<div id="html_6b1933bed02b87e804d0f7c36319ade1" style="width: 100.0%; height: 100.0%;">Champs-Élysées</div>`)[0];
+                popup_b75aa7a1e2efbbac978977cb977c9fbd.setContent(html_6b1933bed02b87e804d0f7c36319ade1);
+            
+        
+
+        marker_34170e8fe758f2d1ea0aa5887fab97c7.bindPopup(popup_b75aa7a1e2efbbac978977cb977c9fbd)
+        ;
+
+        
+    
+    
+            var marker_8a2f9ea777331b4310aca87c78134cd9 = L.marker(
+                [48.8635, 2.3322],
+                {}
+            ).addTo(marker_cluster_a97c5524389c50402d765de7b95aaad9);
+        
+    
+            var icon_0cc6315975bd56a2ce722fc5d825f5a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8a2f9ea777331b4310aca87c78134cd9.setIcon(icon_0cc6315975bd56a2ce722fc5d825f5a3);
+        
+    
+        var popup_caa3713811164f75fcfef1e1ff6af60f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75443e575732362b0c13e029118fbb75 = $(`<div id="html_75443e575732362b0c13e029118fbb75" style="width: 100.0%; height: 100.0%;">Tuileries Garden</div>`)[0];
+                popup_caa3713811164f75fcfef1e1ff6af60f.setContent(html_75443e575732362b0c13e029118fbb75);
+            
+        
+
+        marker_8a2f9ea777331b4310aca87c78134cd9.bindPopup(popup_caa3713811164f75fcfef1e1ff6af60f)
+        ;
+
+        
+    
+</script>
+</html>
